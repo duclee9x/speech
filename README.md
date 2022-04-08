@@ -1,8 +1,10 @@
 ### cài đặt virtualenv để isolate môi trường project với môi trường máy (có thể bỏ qua)
-
+<pre><code>
 pip install virtualenv
 virtualenv speech
 source speech/Scripts/activate
+</code></pre>
+
 
 ### cài đặt package
 
