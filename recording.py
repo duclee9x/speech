@@ -37,7 +37,7 @@ for i in range(len(a)):
         if os.path.exists(file_path):
             continue
         wait_for_next_record(3, speaker_name)
-        myrecording = sd.rec(int(seconds * fs), samplerate=fs, channels=number_of_channel)
+        myrecording = sd.rec(int(seconds * fs), samplerate=fs, channels=number_of_channel, dtype='int16')
         sd.wait()  # Wait until recording is finished
         write(file_path, fs, myrecording)  # Save as WAV file
         print(f"Xong, đã lưu: {file_name}")
